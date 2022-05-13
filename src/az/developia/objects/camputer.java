@@ -1,4 +1,4 @@
-package az.developia.objects;
+ package az.developia.objects;
 
 public class camputer {
 

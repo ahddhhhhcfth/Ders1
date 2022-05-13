@@ -12,6 +12,9 @@ public class MainClass {
 		 hp.cpu="core i7";
 		 System.out.println(hp.cpu);
 		
+		 
+		 calculator calculator = new calculator();
+		calculator.sum( 14 , 4);
 		
 
 	}
