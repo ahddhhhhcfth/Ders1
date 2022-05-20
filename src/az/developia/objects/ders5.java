@@ -1,6 +1,6 @@
- package az.developia.objects;
+package az.developia.objects;
 
-public class camputer {
+public class ders5 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
