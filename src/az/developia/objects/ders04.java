@@ -14,9 +14,9 @@ public class ders04 {
 				
 			}
 		}
-		if(tamdi) {
-			age++;
-			System.out.println(tamdi);
+		{
+
+			
 
 	}
 
