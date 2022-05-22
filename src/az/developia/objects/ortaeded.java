@@ -3,16 +3,19 @@ package az.developia.objects;
 public class ortaeded {
 
 	public static void main(String[] args) {
-		int ata=50;
-		int ana=47;
-		int ovlad=25;
-		while(ata>1905) {
-			ata=ata+3*ovlad;
-			ovlad=ovlad*3;
-			ana++;
+		int eded=654;
+		int reqem=0;
+		int cem=0;
+		while(eded>0) {
+			int qaliq=eded%10;
+			
+				cem+=qaliq;
+				reqem++;
+			
+			
 			
 		}
-System.out.println(); 
+		System.out.println("cem "+cem);
 
 	}
 
