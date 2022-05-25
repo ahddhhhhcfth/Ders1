@@ -14,6 +14,7 @@ public class person {
 			System.out.println("age :"+age);
 			System.out.println("phone :"+phone);
 		}
-		
-
+		void calculatorsalary() {
+salary=age*10;
 	}
+}
