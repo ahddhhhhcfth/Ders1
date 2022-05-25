@@ -13,6 +13,9 @@ public class ders6 {
 		anar.surname="Abbasov";
 		anar.age=23;
 		System.out.println(anar.age);
+		System.out.println(anar.name);
+		System.out.println(anar.surname);
+		
 
 	}
 	
