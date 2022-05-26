@@ -12,11 +12,13 @@ public class ders7 {
 		anar.surname="Abbasov";
 		anar.age=23;
 		anar.maaw=70;
+		 
 		
 		System.out.println(anar.name);
 		System.out.println(anar.surname);
 		System.out.println(anar.age);
 		System.out.println(anar.maaw);
+		
 	}
 
 }
