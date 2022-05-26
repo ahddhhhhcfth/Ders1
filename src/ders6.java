@@ -12,7 +12,7 @@ void printMyAllInfo() {
 	System.out.println("maaw :"+maaw);
 }
 void hesablaMaw() {
-	maaw=age*10;
+	maaw=age*10; 
 }
 
 {
