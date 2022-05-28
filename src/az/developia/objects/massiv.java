@@ -5,27 +5,30 @@ import java.util.Iterator;
 public class massiv {
 
 	public static void main(String[] args) {
-		int a=6;
-		int b=3;
+		int a=3;
+		int b=6;
 		int c=7;
-		int[] nomre=new int[10] ;
-				nomre[0]=6;
-				nomre[1]=4;
-				nomre[2]=9;
-				nomre[3]=41;
-				nomre[4]=13;
-				nomre[5]=16;
-				nomre[6]=21;
-				nomre[7]=96;
-				nomre[8]=12;
-				nomre[9]=0;
-				int cem =0;
-				for (int j = 1; j < 10; j++) {
-					
-					System.out.println(nomre[j]);
-					cem+=nomre[j];
-				}
-				System.out.println(cem);
+		
+		int[] herif=new int[7];
+		herif[0]=65;
+		herif[1]=67;
+		herif[2]=63;
+		herif[3]=62;
+		herif[4]=64;
+		herif[5]=66;
+		herif[6]=6;
+		int cem=0;
+		
+		for (int i = 1; i < 7; i++) {
+			
+			System.out.println(herif[i]);
+			cem +=herif[i]; 
+		}
+		
+		System.out.println(cem);
+		
+		
+		
 				
 		
 		
