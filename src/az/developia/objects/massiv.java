@@ -19,10 +19,13 @@ public class massiv {
 				nomre[7]=96;
 				nomre[8]=12;
 				nomre[9]=0;
+				int cem =0;
 				for (int j = 1; j < 10; j++) {
-					System.out.println(nomre[j]); 
+					
+					System.out.println(nomre[j]);
+					cem+=nomre[j];
 				}
-			
+				System.out.println(cem);
 				
 		
 		
