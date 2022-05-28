@@ -7,12 +7,13 @@ public class ders7 {
 		int age=23;
 		int maaw=70;
 
-		ders6 anar=new ders6();
+		ders6 anar=new ders6("Anar");
 		anar.name="Anar";
 		anar.surname="Abbasov";
 		anar.age=23;
 		anar.maaw=70;
-		 
+		anar.hesablaMaaw();
+	
 		
 		System.out.println(anar.name);
 		System.out.println(anar.surname);
