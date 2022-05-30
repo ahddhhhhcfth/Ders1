@@ -13,6 +13,7 @@ public class obyomniyzMassiv {
 		System.out.println(c[2]);
 		System.out.println(a[1]);
 		
+		
 
 	}
 
