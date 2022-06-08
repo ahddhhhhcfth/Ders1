@@ -11,6 +11,10 @@ public class mainoractika {
 		
 		 Arrayprinte printer = new  Arrayprinte ();
 		 printer.print(camputers);
+		 
+		 erreysort sorter=new erreysort();
+		 sorter.sort(camputers);
+		 printer.print(camputers);
 	}
 
 }
