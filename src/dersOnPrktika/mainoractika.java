@@ -15,6 +15,22 @@ public class mainoractika {
 		 erreysort sorter=new erreysort();
 		 sorter.sort(camputers);
 		 printer.print(camputers);
+		 
+		 int[]array=new int[50];
+		 mainoractika main=new mainoractika();
+		 
+		 for (int i = 0; i < array.length; i++) {
+			array[i]= main.hashCode() ;
+			System.out.println(array[i]+" ");
+			
+		}
+		 int min=array[0];
+		 for (int i = 0; i < array.length; i++) {
+			if(min>array[i]) {
+				min=array[i];
+			}
+		}
+		 System.out.println("Min is: " + min);
 	}
 
 }

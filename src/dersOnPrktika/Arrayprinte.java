@@ -16,6 +16,8 @@ public class Arrayprinte {
 		 camputeradi temp=camputers[0];
 		 camputers[0]=camputers[1];
 		 camputers[1]=temp;
+		 
+		 
 	 }
  }
 }
