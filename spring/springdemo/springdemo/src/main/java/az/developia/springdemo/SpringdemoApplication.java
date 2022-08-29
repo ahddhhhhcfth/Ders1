@@ -11,6 +11,9 @@ public class SpringdemoApplication {
 		ApplicationContext context	=SpringApplication.run(SpringdemoApplication.class, args);
 	student s=	context.getBean(student.class);
 	System.out.println(s.name);
+	
+	computer c=context.getBean(computer.class);
+	System.out.println(c.model);
 		
 //for(String beanName : context.getBeanDefinitionNames()) {
 //	System.out.println(beanName);
