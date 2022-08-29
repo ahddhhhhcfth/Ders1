@@ -9,9 +9,12 @@ public class SpringdemoApplication {
 
 	public static void main(String[] args) {
 		ApplicationContext context	=SpringApplication.run(SpringdemoApplication.class, args);
-for(String beanName : context.getBeanDefinitionNames()) {
-	System.out.println(beanName);
+	student s=	context.getBean(student.class);
+	System.out.println(s.name);
+		
+//for(String beanName : context.getBeanDefinitionNames()) {
+//	System.out.println(beanName);
 }
 	}
 
-}
+
