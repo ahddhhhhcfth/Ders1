@@ -14,6 +14,7 @@ public class SpringdemoApplication {
 	
 	computer c=context.getBean(computer.class);
 	System.out.println(c.model);
+	System.out.println(c.ram.brand);
 		
 //for(String beanName : context.getBeanDefinitionNames()) {
 //	System.out.println(beanName);
