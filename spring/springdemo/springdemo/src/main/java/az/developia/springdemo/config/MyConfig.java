@@ -12,7 +12,7 @@ import az.developia.springdemo.computer;
 public class MyConfig {
 	@Value(value="${myName}")
 	private String myName;
-	@Bean
+	//@Bean
 	public computer myComputer() {
 		computer c=new computer();
 		c.model="G62";

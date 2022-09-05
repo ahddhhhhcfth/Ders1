@@ -15,10 +15,12 @@ public class SpringdemoApplication {
 	System.out.println(s.name);
 	
 	computer c=context.getBean(computer.class);
+	c.model="Predator";
 	System.out.println(c.model);
 	MyConfig config=context.getBean(MyConfig.class);
 	System.out.println(config.getMyName());
-		
+	computer c2=context.getBean(computer.class);
+	System.out.println(c2.model);
 //for(String beanName : context.getBeanDefinitionNames()) {
 //	System.out.println(beanName);
 }
