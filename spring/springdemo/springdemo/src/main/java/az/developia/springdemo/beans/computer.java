@@ -1,5 +1,8 @@
 package az.developia.springdemo.beans;
 
+import javax.annotation.PostConstruct;
+import javax.annotation.PreDestroy;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Primary;
@@ -21,4 +24,18 @@ public computer(){
 	System.out.println("computer created");
 	
 }
+@PostConstruct
+private void init() {
+	System.out.println("init");
 }
+@PreDestroy
+
+private void destroy() {
+	System.out.println("destroy");
+		
+}
+
+
+}
+}
+
