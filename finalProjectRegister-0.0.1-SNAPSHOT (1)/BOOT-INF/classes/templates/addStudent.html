@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+<meta charset="UTF-8">
+<title>addPage</title>
+<!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link th:href="@{/css/addStudent.css}" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+  
+  
+</head>
+<body>
+
+<div class="header">
+<h1>Add New Student Form</h1>
+<nav>
+<a class="nav" th:href="@{/books/list}">BooksList</a>
+<a class="nav" th:href="@{/students/list}">StudentsList</a>
+</nav>
+
+<a class="btn btn-warning" th:href="@{/logout}">Log out</a>
+</div>
+<div class="form">
+<form th:action="@{/students/save}"
+method="post"
+th:object="${student}"
+enctype="multipart/form-data"
+>
+
+
+
+
+           <span> 
+			<input
+				type="hidden" class="form-control" id="id"
+				placeholder="" th:field="*{id}"> 
+			
+			</span>
+
+
+<span>
+<label for="name" class="form-label">Name</label> 
+			  <span style="margin-top:4px; margin-left:10px; color:red; position:absolute; font-size:12px;"th:if="${#fields.hasErrors('name')}" th:errors="*{name}"></span>
+
+			<input
+				type="text" class="form-control" id="name"
+				placeholder="enter name.." th:field="*{name}"> 
+</span>
+
+<span>
+<label for="surname" class="form-label">Surname</label> 
+			<input
+				type="text" class="form-control" id="surname"
+				placeholder="enter name.." th:field="*{surname}"> 
+</span>
+
+
+
+<span>
+<label for="phone" class="form-label">Phone</label> 
+<span  style="margin-top:4px; margin-left:10px; color:red; position:absolute; font-size:12px;"th:if="${#fields.hasErrors('phone')}" th:errors="*{phone}"></span>
+			<input 
+				type="text" class="form-control" id="phone"
+				placeholder="enter student's phone" th:field="*{phone}"> 
+</span>
+
+
+		
+			
+			
+			
+			
+			
+			<span>
+			<label for="adress" class="form-label">Adress</label>
+		<span style="margin-top:4px; margin-left:10px; color:red; position:absolute; font-size:12px;"th:if="${#fields.hasErrors('adress')}" th:errors="*{adress}"></span>
+			
+			<input
+				type="text" class="form-control" id="adress"
+				placeholder="enter adress.." th:field="*{adress}">
+			
+			</span>
+
+			
+			
+			<span>
+			<label for="username" class="form-label">Username</label> 
+		  <span style="margin-top:4px; margin-left:10px; color:red; position:absolute; font-size:12px;"th:if="${#fields.hasErrors('username')}" th:errors="*{username}"></span>
+			
+			<input
+				type="text" class="form-control" id="username"
+				placeholder="enter username.." th:field="*{username}">
+			
+			</span>
+				
+			
+				 <span>
+			<label for="password" class="form-label">Password</label> 
+		<span style="margin-top:4px; margin-left:10px; color:red; position:absolute; font-size:12px;"th:if="${#fields.hasErrors('password')}" th:errors="*{password}"></span> 
+			
+			<input
+				type="password" class="form-control" id="password"
+				placeholder="enter password.." th:field="*{password}">
+			
+			</span>
+		
+		
+				
+				<input type="submit" class="btn btn-success" />
+
+		</form>
+</div>
+
+</body>
+</html>
